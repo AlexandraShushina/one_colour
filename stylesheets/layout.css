@@ -4,23 +4,90 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
   display: block;
   position: relative;
 }
-.main {
+.main_1 {
   width: 1440px;
   height: 3158px;
-  background: white;
+  background: url(grid.svg) no-repeat;
+  background-color: white;
   margin: 0 auto;
   display: block;
   position: relative;
 }
-.grey_pos {
+.grey {
+  position: relative;
+  margin-top: 0;
+  margin-left: 0.3px;
+}
+.grey:hover {
+  cursor: pointer;
+}
+.green {
   position: absolute;
   margin-top: -2983.5px;
   margin-left: 0.3px;
+  opacity: 0%;
 }
-.grey_pos:hover {
-  cursor: pointer;
+.tria_1 {
+  margin-top: -706px;
+  margin-left: 75.5px;
+  position: absolute;
 }
-.plug_pos {
+.tria_2 {
+  margin-top: -706px;
+  margin-left: 1278px;
+  position: absolute;
+}
+.rhomb_1 {
+  margin-top: -708px;
+  margin-left: 209.5px;
+  position: absolute;
+}
+.rhomb_2 {
+  margin-top: -703px;
+  margin-left: 1146px;
+  position: absolute;
+}
+.fish_1 {
+  margin-top: -672.5px;
+  margin-left: 409.5px;
+  position: absolute;
+}
+.fish_2 {
+  margin-top: -814px;
+  margin-left: 542px;
+  position: absolute;
+}
+.fish_3 {
+  margin-top: -812.5px;
+  margin-left: 855px;
+  position: absolute;
+}
+.rhomb_big {
+  margin-top: -847px;
+  margin-left: 989.5px;
+  position: absolute;
+}
+.star_1 {
+  margin-top: -632.5px;
+  margin-left: 901.5px;
+  position: absolute;
+}
+.star_2 {
+  margin-top: -777.5px;
+  margin-left: 678.5px;
+  position: absolute;
+}
+.bird_1 {
+  margin-top: -850px;
+  margin-left: 276.5px;
+  position: absolute;
+}
+.bird_2 {
+  margin-top: -597.5px;
+  margin-left: 609.7px;
+  position: absolute;
+}
+.plug {
   width: 925px;
   height: 320px;
   background: url(plug.svg);
@@ -29,12 +96,40 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
   background-repeat: no-repeat;
   margin-top: -410px;
 }
-.plug_lines_pos {
+.plug_lines {
   margin-top: -245px;
   margin-left: 413px;
   position: absolute;
 }
-.rectangle {
+.rectangle_1 {
+  width: 405px;
+  height: 327px;
+  background: url(count.svg) no-repeat;
+  background-color: #1c35c6;
+  margin-top: -853px;
+  margin-left: 504px;
+  display: inline-block;
+  position: absolute;
+  opacity: 0%;
+}
+.rectangle_2 {
+  width: 371px;
+  height: 23px;
+  background-color: #1c35c6;
+  margin-top: -450px;
+  margin-left: 504px;
+  display: inline-block;
+  position: absolute;
+  font-weight: 550;
+  font-style: normal;
+  font-size: 20px;
+  color: white;
+  line-height: 115%;
+  text-align: center;
+  padding: 17px;
+  opacity: 0%;
+}
+.rectangle_3 {
   width: 1340px;
   height: 115px;
   background-color: #1c35c6;
