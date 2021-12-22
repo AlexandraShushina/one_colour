@@ -1,0 +1,7 @@
+@media all and (max-width: 1367px) and (min-width: 1024px) {
+  .main_1 {text-align: center; width: 100%;}
+  .wid {display: inline-block; width: 1366px; max-width: 100%}
+  .wid img {
+    width: 100%;
+  }
+}
