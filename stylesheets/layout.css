@@ -13,127 +13,98 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
   display: block;
   position: relative;
 }
-.grey {
-  height: 2156px;
+.container {
+  display: block;
   position: relative;
-  margin-top: 0;
-  margin-left: 0.3px;
-}
-.parent {
+  cursor: pointer;
   width: 1440px;
-  height: 405px;
+  height: 2620px;
+}
+.container input {
+ position: absolute;
+ opacity: 0;
+ cursor: pointer;
+ height: 0;
+ width: 0;
+}
+.checkmark {
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 2620px;
+ width: 1440px;
+ background: url(green.svg) no-repeat;
+ transition: background 0.2s ease-in-out;
+}
+.container input:checked ~ .checkmark {
+ background: url(grey_1.svg) no-repeat;
+}
+.checkmark:after {
+ content: "";
+ position: absolute;
+ display: none;
+}
+.container input:checked ~ .checkmark:after {
+ display: none;
+}
+.container .checkmark:after {
+ left: 100px;
+ top: 50px;
+ width: 100px;
+ height: 10px;
+}
+input[type="checkbox"]:not(:checked) {
+  height: 2620px;
+  width: 1440px;
+}
+input[type="checkbox"]:checked {
+  width: 1440px;
+  height: 2620px;
+}
+.switch {
   position: relative;
-  margin-top: -5px;
-  margin-left: auto;
-  margin-right: auto;
   display: inline-block;
 }
-.parent_2 {
-  width: 925px;
-  height: 320px;
-  position: relative;
-}
-.look_parent {
+.switch-input {
   display: none;
-  height: 405px;
-  position: relative;
-  margin-top: 0;
-  margin-left: 0.3px;
 }
-.look_parent_2 {
-  display: none;
-  width: 925px;
-  height: 320px;
-  position: relative;
-  margin-top: 0;
-  margin-left: 0.3px;
+.switch-label {
+  display: block;
+  width: 1136.71px;
+  height: 221.16px;
+  color: transparent;
 }
-.grey img {
-  width: 100%;
-  height: auto;
-  margin-top: 0;
-}
-.grey:hover {
+.switch-label::before,
+.switch-label::after {
+  content: "";
+  display: block;
+  position: absolute;
   cursor: pointer;
 }
-.green {
-  position: absolute;
-  margin-top: -2983.5px;
-  margin-left: 0.3px;
-  opacity: 0%;
+.switch-label::after {
+  top: -262px;
+  left: -1px;
+  width: 2136.71px;
+  height: 221.16px;
+  background: url(plug_1.svg) no-repeat;
+  background-position: -507px 0;
+  transition: background-position 1s ease;
 }
-.tria_1 {
-  margin-top: 127px;
-  margin-left: 75.5px;
-  position: absolute;
+.switch-input:checked + .switch-label::after {
+  background-position: -143.5px 0;
 }
-.tria_2 {
-  margin-top: 127px;
-  margin-left: 1278px;
+.thing {
   position: absolute;
+  width: 80px;
+  height: 100px;
+  background-color: #8D8D8D;
+  margin-left: 928px;
+  margin-top: -390px;
 }
-.rhomb_1 {
-  margin-top: 125px;
-  margin-left: 209.5px;
-  position: absolute;
-}
-.rhomb_2 {
-  margin-top: 130px;
-  margin-left: 1146px;
-  position: absolute;
-}
-.fish_1 {
-  margin-top: 161.5px;
-  margin-left: 409.5px;
-  position: absolute;
-}
-.fish_2 {
-  margin-top: 19px;
-  margin-left: 542px;
-  position: absolute;
-}
-.fish_3 {
-  margin-top: 20.5px;
-  margin-left: 855px;
-  position: absolute;
-}
-.rhomb_big {
-  margin-top: -14px;
-  margin-left: 989.5px;
-  position: absolute;
-}
-.star_1 {
-  margin-top: 200.5px;
-  margin-left: 901.5px;
-  position: absolute;
-}
-.star_2 {
-  margin-top: 52.5px;
-  margin-left: 678.5px;
-  position: absolute;
-}
-.bird_1 {
-  margin-top: -17px;
-  margin-left: 276.5px;
-  position: absolute;
-}
-.bird_2 {
-  margin-top: 232.5px;
-  margin-left: 609.7px;
-  position: absolute;
-}
-.plug {
-  width: 925px;
-  height: 320px;
-  background: url(plug.svg);
-  background-position: -509px 69px;
-  position: absolute;
-  background-repeat: no-repeat;
-}
-.plug_lines img {
-  margin-left: 413px;
-  margin-top: 184px;
-  position: absolute;
+.hole {
+  position: relative;
+  margin-left: 790px;
+  margin-top: 50px;
 }
 .rectangle_1 {
   width: 405px;
@@ -167,7 +138,7 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
   width: 1340px;
   height: 115px;
   background-color: #1c35c6;
-  margin-top: 102px;
+  margin-top: -128px;
   display: inline-block;
   position: relative;
   font-weight: 550;
@@ -193,7 +164,7 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
   margin-top: -110px;
 }
 .pos_4 {
-  margin-left: 1060px;
+  margin-left: 1070px;
   margin-top: -115px;
 }
 /* без транзишена работает */
