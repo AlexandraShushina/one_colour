@@ -13,6 +13,22 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
   display: block;
   position: relative;
 }
+.rectangle {
+  width: 235px;
+  height: 23px;
+  background-color: #1c35c6;
+  margin-top: -835px;
+  margin-left: 187px;
+  display: inline-block;
+  position: absolute;
+  font-weight: 550;
+  font-style: normal;
+  font-size: 20px;
+  color: white;
+  line-height: 115%;
+  text-align: center;
+  padding: 17px;
+}
 .container {
   display: block;
   position: relative;
@@ -109,20 +125,18 @@ input[type="checkbox"]:checked {
 .rectangle_1 {
   width: 405px;
   height: 327px;
-  background: url(count.svg) no-repeat;
-  background-color: #1c35c6;
-  margin-top: -853px;
-  margin-left: 504px;
-  display: inline-block;
+  margin-top: -970px;
+  margin-left: 514px;
   position: absolute;
-  opacity: 0%;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 .rectangle_2 {
   width: 371px;
   height: 23px;
   background-color: #1c35c6;
-  margin-top: -450px;
-  margin-left: 504px;
+  margin-top: -575px;
+  margin-left: 514px;
   display: inline-block;
   position: absolute;
   font-weight: 550;
@@ -132,8 +146,9 @@ input[type="checkbox"]:checked {
   line-height: 115%;
   text-align: center;
   padding: 17px;
-  opacity: 0%;
+  opacity: 0;
 }
+.rectangle_1:hover ~ .rectangle_2 { opacity: 1; transition: all 0.5s;}
 .rectangle_3 {
   width: 1340px;
   height: 115px;
