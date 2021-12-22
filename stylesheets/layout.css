@@ -14,9 +14,44 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
   position: relative;
 }
 .grey {
+  height: 2156px;
   position: relative;
   margin-top: 0;
   margin-left: 0.3px;
+}
+.parent {
+  width: 1440px;
+  height: 405px;
+  position: relative;
+  margin-top: -5px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+.parent_2 {
+  width: 925px;
+  height: 320px;
+  position: relative;
+}
+.look_parent {
+  display: none;
+  height: 405px;
+  position: relative;
+  margin-top: 0;
+  margin-left: 0.3px;
+}
+.look_parent_2 {
+  display: none;
+  width: 925px;
+  height: 320px;
+  position: relative;
+  margin-top: 0;
+  margin-left: 0.3px;
+}
+.grey img {
+  width: 100%;
+  height: auto;
+  margin-top: 0;
 }
 .grey:hover {
   cursor: pointer;
@@ -28,62 +63,62 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
   opacity: 0%;
 }
 .tria_1 {
-  margin-top: -706px;
+  margin-top: 127px;
   margin-left: 75.5px;
   position: absolute;
 }
 .tria_2 {
-  margin-top: -706px;
+  margin-top: 127px;
   margin-left: 1278px;
   position: absolute;
 }
 .rhomb_1 {
-  margin-top: -708px;
+  margin-top: 125px;
   margin-left: 209.5px;
   position: absolute;
 }
 .rhomb_2 {
-  margin-top: -703px;
+  margin-top: 130px;
   margin-left: 1146px;
   position: absolute;
 }
 .fish_1 {
-  margin-top: -672.5px;
+  margin-top: 161.5px;
   margin-left: 409.5px;
   position: absolute;
 }
 .fish_2 {
-  margin-top: -814px;
+  margin-top: 19px;
   margin-left: 542px;
   position: absolute;
 }
 .fish_3 {
-  margin-top: -812.5px;
+  margin-top: 20.5px;
   margin-left: 855px;
   position: absolute;
 }
 .rhomb_big {
-  margin-top: -847px;
+  margin-top: -14px;
   margin-left: 989.5px;
   position: absolute;
 }
 .star_1 {
-  margin-top: -632.5px;
+  margin-top: 200.5px;
   margin-left: 901.5px;
   position: absolute;
 }
 .star_2 {
-  margin-top: -777.5px;
+  margin-top: 52.5px;
   margin-left: 678.5px;
   position: absolute;
 }
 .bird_1 {
-  margin-top: -850px;
+  margin-top: -17px;
   margin-left: 276.5px;
   position: absolute;
 }
 .bird_2 {
-  margin-top: -597.5px;
+  margin-top: 232.5px;
   margin-left: 609.7px;
   position: absolute;
 }
@@ -91,14 +126,13 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
   width: 925px;
   height: 320px;
   background: url(plug.svg);
-  background-position: -508px 50px;
+  background-position: -509px 69px;
   position: absolute;
   background-repeat: no-repeat;
-  margin-top: -410px;
 }
-.plug_lines {
-  margin-top: -245px;
+.plug_lines img {
   margin-left: 413px;
+  margin-top: 184px;
   position: absolute;
 }
 .rectangle_1 {
@@ -133,7 +167,7 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
   width: 1340px;
   height: 115px;
   background-color: #1c35c6;
-  margin: -5px auto;
+  margin-top: 102px;
   display: inline-block;
   position: relative;
   font-weight: 550;
