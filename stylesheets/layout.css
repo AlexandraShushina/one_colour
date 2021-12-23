@@ -87,7 +87,7 @@ input[type="checkbox"]:checked {
 .switch-label {
   display: block;
   width: 1136.71px;
-  height: 221.16px;
+  height: 310px;
   color: transparent;
 }
 .switch-label::before,
@@ -98,10 +98,10 @@ input[type="checkbox"]:checked {
   cursor: pointer;
 }
 .switch-label::after {
-  top: -262px;
-  left: -1px;
+  top: -255px;
+  left: -0.5px;
   width: 2136.71px;
-  height: 221.16px;
+  height: 310px;
   background: url(plug_1.svg) no-repeat;
   background-position: -507px 0;
   transition: background-position 1s ease;
@@ -109,13 +109,16 @@ input[type="checkbox"]:checked {
 .switch-input:checked + .switch-label::after {
   background-position: -143.5px 0;
 }
+form {
+  margin-top: -94px;
+}
 .thing {
   position: absolute;
   width: 80px;
   height: 100px;
   background-color: #8D8D8D;
-  margin-left: 928px;
-  margin-top: -390px;
+  margin-left: 926px;
+  margin-top: -380px;
 }
 .hole {
   position: relative;
@@ -182,59 +185,3 @@ input[type="checkbox"]:checked {
   margin-left: 1070px;
   margin-top: -115px;
 }
-/* без транзишена работает */
-/* .piece_1_pos {
-  margin-left: 854px;
-  margin-top: -2450px;
-  position: absolute;
-  transition: all .5s;
-} */
-/* это если нужна анимация при наведении на кусок */
-/* .piece_1_pos:hover {
-  cursor: pointer;
-  transition: all .2s;
-  opacity: 0;
-} */
-/* .piece_2_pos {
-  margin-left: 787.5px;
-  margin-top: -2342.5px;
-  position: absolute;
-}
-.piece_3_pos {
-  margin-left: 453.5px;
-  margin-top: -2451px;
-  position: absolute;
-}
-.piece_4_pos {
-  margin-left: 987.2px;
-  margin-top: -2129px;
-  position: absolute;
-}
-.piece_5_pos {
-  margin-left: 386.5px;
-  margin-top: -2129px;
-  position: absolute;
-}
-.piece_4_1_pos {
-  margin-left: 253.5px;
-  margin-top: -1918.5px;
-  transform: rotate(180deg);
-  position: absolute;
-}
-.piece_2_1_pos {
-  margin-left: 987px;
-  margin-top: -1918px;
-  position: absolute;
-  transform: rotate(180deg);
-}
-.piece_2_2_pos {
-  margin-left: 1055px;
-  margin-top: -1384px;
-  position: absolute;
-  transform: rotate(180deg);
-}
-.piece_6_pos {
-  margin-left: 187px;
-  margin-top: -1383.5px;
-  position: absolute;
-} */
